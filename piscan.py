@@ -7,6 +7,12 @@ from pygame.locals import *
 import picamera
 import http.client
 
+### Settings ###
+camera = picamera.PiCamera()
+camera.hflip = True
+camera.vflip = True
+camera.resolution = (1024, 768)
+
 #### Functions ####
 
 def connected():
@@ -18,15 +24,7 @@ def connected():
         return False
 
 def make_foto():
-
-    camera = picamera.PiCamera()
-    camera.hflip = True
-    camera.vflip = True
-    camera.resolution = (1024, 768)
-    
-    camera.start_preview(alpha=200)
-    camera.capture('~/Desktop/Pictures/script_shot.jpg')
-    camera.stop_preview()
+    camera.capture('doc_pic.jpg')
     camera.close()
 
 #### MAIN PROGRAM ####
