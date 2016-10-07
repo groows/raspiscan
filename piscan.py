@@ -27,11 +27,12 @@ def make_foto():
     camera.capture('doc_pic.jpg')
     camera.close()
 
+
 #### MAIN PROGRAM ####
 
 
 try:
-    if 1 == 1:
+    if connected():
         make_foto()
     else:
         print("not connected")
