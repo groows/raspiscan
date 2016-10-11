@@ -7,4 +7,7 @@ This ist my first github project, so this will take some time
 Need to install python3 picamera library
 https://www.raspberrypi.org/documentation/usage/camera/python/README.md
 
+tutorial how to use opencv for image transformation:
+http://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/
+
 
